@@ -28,7 +28,7 @@ const JobPage = ({ deleteJob }) => {
         <div className='container m-auto py-6 px-6'>
           <Link
             to='/jobs'
-            className='text-indigo-500 hover:text-indigo-600 flex items-center'
+            className='text-gray-500 hover:text-gray-700 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Back to Job Listings
           </Link>
@@ -92,7 +92,7 @@ const JobPage = ({ deleteJob }) => {
                 <h3 className='text-xl font-bold mb-6'>Manage Job</h3>
                 <Link
                   to={`/edit-job/${job.id}`}
-                  className='bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
+                  className='bg-gray-500 hover:bg-gray-700 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
                 >
                   Edit Job
                 </Link>

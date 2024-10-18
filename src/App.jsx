@@ -11,6 +11,9 @@ import NotFoundPage from './pages/NotFoundPage';
 import JobPage, { jobLoader } from './pages/JobPage';
 import AddJobPage from './pages/AddJobPage';
 import EditJobPage from './pages/EditJobPage';
+import LoginPage from './pages/auth/LoginPage';
+import RegisterPage from './pages/auth/RegisterPage';
+
 
 const App = () => {
   // Add New Job
@@ -62,7 +65,12 @@ const App = () => {
           loader={jobLoader}
         />
         <Route path='*' element={<NotFoundPage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+
+
       </Route>
+      
     )
   );
 

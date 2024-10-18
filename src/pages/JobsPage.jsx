@@ -1,10 +1,12 @@
-import JobListings from '../components/JobListings';
+import FiltersSidebar from "@/components/FiltersSidebar";
+import JobListings from "../components/JobListings";
 
 const JobsPage = () => {
   return (
-    <section className='bg-blue-50 px-4 py-6'>
+    <div className="flex">
+      <FiltersSidebar />
       <JobListings />
-    </section>
+    </div>
   );
 };
 export default JobsPage;
